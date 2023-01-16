@@ -12,7 +12,7 @@ $('a[href*="#"]').click(scroll);
 
 
 //Sticky MENU
-window.onscroll = function() { myFunction() };
+window.onload = function() { myFunction() };
 
 const navbar = document.getElementById("header");
 
