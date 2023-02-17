@@ -1,0 +1,1139 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:wght@300&display=swap');
+*,
+ ::after,
+ ::before {
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Source Code Pro', monospace;
+    line-height: 3.5vh;
+}
+
+body {
+    background-color: rgb(22, 22, 53);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#header {
+    width: 97vw;
+    height: 16vh;
+    overflow: hidden;
+    background: rgb(22, 22, 53);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(22, 22, 53);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.sticky+main {
+    padding-top: 40vh;
+}
+
+#logoD {
+    position: absolute;
+    top: 3vh;
+    left: 1vw;
+    display: flex;
+    align-items: center;
+    width: 20vw;
+    height: 5vh;
+}
+
+#logo {
+    float: left;
+    width: 5vw;
+    height: 5vh;
+}
+
+#menu {
+    position: absolute;
+    top: 3vh;
+    right: 2vw;
+    float: right;
+    width: 25vw;
+    height: 5vh;
+}
+
+.mainNav,
+.big {
+    text-align: center;
+    display: inline-block;
+    width: 5.5vw;
+    height: 3vh;
+    transition: all 0.7s;
+}
+
+.mainNav:hover,
+.big:hover {
+    border: 1px solid #000;
+    width: 5.6vw;
+    height: 3.1vh;
+    cursor: pointer;
+}
+
+aside {
+    float: left;
+    height: 35vh;
+    width: 7vw;
+}
+
+#social {
+    width: 5vw;
+    height: 20vh;
+}
+
+.logoSocial {
+    margin-bottom: 5px;
+    width: 5vw;
+    height: 5vh;
+}
+
+.logoSocial:hover {
+    cursor: pointer;
+    width: 5.3vw;
+    height: 5.3vh;
+}
+
+#contentMain {
+    float: left;
+    width: 85vw;
+    height: 50vh;
+}
+
+#content {
+    width: 75vw;
+    height: 35vh;
+    margin: auto;
+}
+
+#hOne {
+    text-align: center;
+    width: 100%;
+    height: 33%;
+    margin-bottom: 5vh;
+}
+
+#hThree {
+    margin: auto;
+    width: 70%;
+    height: 33%;
+}
+
+#change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 33%;
+}
+
+button {
+    font-weight: bold;
+    font-size: x-large;
+    width: 10vw;
+    height: 5vh;
+    color: #000;
+}
+
+#button1 {
+    font-weight: bold;
+    font-size: x-large;
+    width: 15vw;
+    height: 8vh;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    animation: buttonUp 1s;
+}
+
+@keyframes buttonUp {
+    from {
+        transform: translateY()
+    }
+    to {
+        transform: translateY(-1.1vh)
+    }
+}
+
+#aboutHr {
+    position: absolute;
+    left: 45vw;
+    width: 120px;
+    height: 5px;
+    background: #fff;
+    border: none;
+}
+
+#aboutBlock {
+    text-align: center;
+    width: 95vw;
+    height: 29vh;
+}
+
+#aboutMain {
+    width: 100vw;
+    height: 95vh;
+    margin-top: 60vh;
+}
+
+#info,
+#skils {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+#ytSpan {
+    color: red;
+}
+
+#info {
+    margin-left: 5vw;
+    margin-right: 12vw;
+}
+
+#information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+
+#skils_icon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills__skill {
+    cursor: pointer;
+    width: 9vw;
+    height: 7vh;
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.3rem;
+    background: rgba(153, 153, 153, .1);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #666;
+    text-align: center;
+}
+
+#projectsMain {
+    width: 100vw;
+    height: 95vh;
+    margin-top: 20vh;
+}
+
+#infoProjects {
+    width: 100vw;
+    height: 30vh;
+    text-align: center;
+}
+
+#projects_container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#projectsHr {
+    position: absolute;
+    left: 47vw;
+    width: 120px;
+    height: 5px;
+    background: #fff;
+    border: none;
+}
+
+#projects_imgOne {
+    float: left;
+    margin-top: 10vh;
+    width: 40vw;
+    height: 50vh;
+}
+
+#projectsContentOne,
+#projectsContentTwo,
+#projectsContentThree {
+    margin-left: 5vw;
+    float: left;
+    margin-top: 26vh;
+    width: 30vw;
+    height: 30vh;
+    text-align: left;
+}
+
+#projects_imgTwo {
+    clear: both;
+    float: left;
+    margin-top: 10vh;
+    width: 40vw;
+    height: 50vh;
+}
+
+#projects_imgThree {
+    clear: both;
+    float: left;
+    margin-top: 10vh;
+    width: 40vw;
+    height: 50vh;
+}
+
+
+/*Project One*/
+
+#photoDes {
+    width: 100vw;
+    height: 100vh;
+}
+
+#description {
+    height: 30vh;
+    width: 50vw;
+    margin: auto;
+}
+
+#img {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tool {
+    height: 40vh;
+    width: 52vw;
+    margin: auto;
+}
+
+.skill {
+    float: left;
+    cursor: pointer;
+    width: 9vw;
+    height: 7vh;
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.3rem;
+    background: rgba(153, 153, 153, .1);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #666;
+    text-align: center;
+}
+
+#skills {
+    width: 50vw;
+    height: 20vh;
+}
+
+#see {
+    height: 20vh;
+    width: 50vw;
+    margin: auto;
+}
+
+#back {
+    margin-left: 2vw;
+    background: none;
+}
+
+
+/*Contact*/
+
+#contact_main {
+    width: 100vw;
+    height: 30vh;
+    margin-top: 150vh;
+}
+
+.contact__form-container {
+    box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+    padding: 4rem;
+    margin-top: 6rem;
+    max-width: 80rem;
+    text-align: right;
+    width: 40%;
+    border-radius: 5px;
+    margin: 5rem auto 0 auto;
+}
+
+.contact__form-field {
+    margin-bottom: 4rem;
+}
+
+.contact__form-label {
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+}
+
+.contact__form-input {
+    color: #000;
+    padding: 2rem;
+    width: 100%;
+    height: 2vh;
+    border: 1px solid #ebebeb;
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#message {
+    height: 15vh;
+}
+
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150vh;
+    width: 100vw;
+    height: 30vh;
+    background-color: #000;
+}
+
+#footer_main {
+    margin: auto;
+    width: 70vw;
+    height: 20vh;
+    border-bottom: 2px solid #fff;
+}
+
+#nameF {
+    float: left;
+    width: 30vw;
+    height: 20vh;
+}
+
+#socialF {
+    float: left;
+    width: 40vw;
+    height: 20vh;
+}
+
+#git_f,
+#yt_f {
+    float: right;
+    width: 2.5vw;
+    height: 5vh;
+}
+
+#git_f:hover {
+    width: 2.7vw;
+    height: 5.2vh;
+}
+
+#yt_f:hover {
+    width: 2.7vw;
+    height: 5.2vh;
+}
+
+#footerMain {
+    margin-top: 510vh;
+}
+
+
+/*Responsive*/
+
+@media only screen and (min-width: 320px) {
+    .lines {
+        background: #000;
+        width: 10vw;
+        margin-bottom: 1vh;
+        height: 0.5vh;
+    }
+    #hamburger {
+        width: 10vw;
+        height: 6vh;
+        position: absolute;
+        right: 17vw;
+        top: 10vh;
+        display: block;
+    }
+    #logoD {
+        position: absolute;
+        top: 5vh;
+        width: 67vw;
+        height: 15vh;
+    }
+    #menu {
+        display: none;
+        width: 33vw;
+        height: 20vh;
+        top: 15vh;
+        background: rgb(22, 22, 53);
+    }
+    #name {
+        margin-left: 5vw;
+    }
+    .mainNav {
+        display: block;
+        width: 15vw;
+        height: 3vh;
+    }
+    .mainNav:hover {
+        width: 15.2vw;
+    }
+    .big {
+        display: block;
+        width: 20vw;
+    }
+    .big:hover {
+        width: 25.2vw;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+    }
+    main {
+        width: 100vw;
+        height: 100vh;
+    }
+    .sticky+main {
+        padding-top: 30vh;
+    }
+    /*1 section*/
+    #logo {
+        width: 15vw;
+        height: 15vh;
+    }
+    .logoSocial {
+        display: none;
+    }
+    #oneH1 {
+        line-height: 5.4vh;
+    }
+    #hOne {
+        height: 50%;
+    }
+    #hThree {
+        width: 90%;
+        height: 35vh;
+    }
+    #change {
+        width: 70vw;
+    }
+    #b1 {
+        width: 50vw;
+    }
+    /*2 section*/
+    #aboutMain {
+        margin-top: 90vh;
+    }
+    #aboutBlock {
+        height: 40vh;
+    }
+    #aboutHr {
+        left: 30vw;
+    }
+    #information {
+        height: 110vh;
+        display: block;
+    }
+    #info {
+        width: 90vw;
+        height: 100%;
+        float: none;
+        margin-right: 2vw;
+    }
+    #info p {
+        margin: 0;
+        word-wrap: break-word;
+    }
+    #skils {
+        position: absolute;
+        left: 10vw;
+        float: none;
+        display: block;
+        width: 90vw;
+        height: 80vh;
+    }
+    .skills__skill {
+        width: 30vw;
+        height: 4vh;
+        font-size: 15px;
+        margin: 12px;
+        margin-right: 20px;
+        padding: 0;
+    }
+    #b2 {
+        width: 70vw;
+    }
+    /*3 section*/
+    #projectsMain {
+        margin-top: 120vh;
+    }
+    /*Project 1*/
+    #projects_imgOne {
+        float: none;
+        margin-left: 55vw;
+    }
+    .imgP {
+        float: none;
+        width: 90vw;
+        height: 90vw;
+    }
+    #projectsContentOne {
+        float: none;
+    }
+    #projectsHr {
+        left: 30vw;
+    }
+    #projectsContentOne {
+        margin-top: -10vh;
+        margin-left: 15vw;
+        width: 70vw;
+        height: 60vh;
+    }
+    .bp1 {
+        width: 50vw;
+    }
+    /*Project 2*/
+    #projects_imgTwo {
+        float: none;
+        margin-left: 55vw;
+    }
+    .imgP {
+        float: none;
+        width: 90vw;
+        height: 90vw;
+    }
+    #projectsContentTwo {
+        float: none;
+    }
+    #projectsHr {
+        left: 30vw;
+    }
+    #projectsContentTwo {
+        margin-top: -10vh;
+        margin-left: 15vw;
+        width: 70vw;
+        height: 60vh;
+    }
+    .bp1 {
+        width: 50vw;
+    }
+    /*Project 3*/
+    #projects_imgThree {
+        float: none;
+        margin-left: 55vw;
+    }
+    .imgP {
+        float: none;
+        width: 90vw;
+        height: 90vw;
+    }
+    #projectsContentThree {
+        float: none;
+    }
+    #projectsHr {
+        left: 30vw;
+    }
+    #projectsContentThree {
+        margin-top: -10vh;
+        margin-left: 15vw;
+        width: 70vw;
+        height: 60vh;
+    }
+    .bp1 {
+        width: 50vw;
+    }
+    /*Form*/
+    #contact_main {
+        margin-top: 280vh;
+    }
+    #infoProjects {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .contact__form {
+        width: 100vw;
+        height: 70vh;
+        text-align: left;
+        float: left;
+        float: left;
+    }
+    .contact__form-container {
+        width: 80vw;
+        height: 90vh;
+        padding: 2rem;
+    }
+    .contact__form-field {
+        width: 60vw;
+    }
+    .contact__form-input {
+        width: 60vw;
+        height: 4vh;
+        font-size: 13px;
+    }
+    #Sub {
+        width: 40vw;
+    }
+    /*Footer*/
+    #footerMain {
+        margin-top: 770vh;
+        height: 60vh;
+    }
+    #footer_main {
+        height: 35vh;
+    }
+    #nameF,
+    #socialF {
+        float: none;
+    }
+    #nameF {
+        margin-top: 7vh;
+        width: 80vw;
+        height: 30vh;
+    }
+    #socialF {
+        position: absolute;
+        top: 873vh;
+        height: 10vh;
+    }
+    #git_f,
+    #yt_f {
+        width: 10vw;
+        height: 7vh;
+    }
+    #git_f:hover {
+        width: 10.5vw;
+        height: 7.5vh;
+    }
+    #yt_f:hover {
+        width: 10.5vw;
+        height: 7.5vh;
+    }
+    .contact__form {
+        width: 90vw;
+        height: 70vh;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    #projectsContentOne {
+        margin-top: -4vh;
+    }
+    #projectsContentTwo {
+        margin-top: -4vh;
+    }
+    #projectsContentThree {
+        margin-top: -4vh;
+    }
+    #projectsHr {
+        left: 33vw;
+    }
+    /*Form*/
+    .contact__form {
+        width: 90vw;
+        height: 70vh;
+        text-align: left;
+    }
+    .contact__form-field {
+        width: 60vw;
+    }
+    .contact__form-input {
+        width: 55vw;
+        font-size: 15px;
+    }
+}
+
+
+/*425 px*/
+
+@media only screen and (min-width: 425px) {
+    #projectsContentOne {
+        margin-top: 1vh;
+    }
+    #projectsContentTwo {
+        margin-top: 1vh;
+    }
+    #projectsContentThree {
+        margin-top: 1vh;
+    }
+    #projectsHr {
+        left: 36vw;
+    }
+    #contact_main {
+        margin-top: 300vh;
+    }
+}
+
+
+/*550 px*/
+
+@media only screen and (min-width: 550px) {
+    #hThree {
+        height: 27vh;
+    }
+    #aboutHr {
+        left: 37vw;
+    }
+    #information {
+        height: 90vh;
+    }
+    #projectsMain {
+        margin-top: 100vh;
+    }
+    #projectsHr {
+        left: 39vw;
+    }
+    #projectsContentOne {
+        height: 40vh;
+        margin-top: 10vh;
+    }
+    #projectsContentTwo {
+        height: 40vh;
+        margin-top: 10vh;
+    }
+    #projectsContentThree {
+        height: 40vh;
+        margin-top: 10vh;
+    }
+    #projects_imgOne {
+        margin-left: 45vw;
+    }
+    .imgP {
+        width: 70vw;
+        height: 50vh;
+        float: left;
+    }
+    #projects_imgTwo {
+        margin-left: 45vw;
+    }
+    #contact_main {
+        margin-top: 280vh;
+    }
+    .contact__form {
+        width: 70vw;
+        height: 80vh;
+    }
+    #logo {
+        width: 7vw;
+        height: 7vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /*Hamburger + sticky menu*/
+    #hamburger {
+        display: none;
+    }
+    #menu {
+        display: inline;
+        top: 10.7vh;
+        left: 45vw;
+        width: 50vw;
+        height: 6vh;
+    }
+    .mainNav,
+    .big {
+        display: inline;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    #skils {
+        height: 60vh;    }
+    #name {
+        font-size: 20px;
+    }
+    .sticky+main {
+        padding-top: 35vh;
+    }
+    /*Start*/
+    #hOne {
+        height: 30%;
+    }
+    #hThree {
+        height: 23vh;
+    }
+    /*About*/
+    #aboutMain {
+        margin-top: 65vh;
+    }
+    #aboutHr {
+        left: 40vw;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    button {
+        font-size: 20px;
+    }
+    #b1 {
+        width: 50vw;
+    }
+    #skils {
+        top: 215vh;
+        left: 1vw;
+    }
+    #skils_icon {
+        width: 90vw;
+    }
+    .skills__skill {
+        width: 40vw;
+        font-size: 20px;
+    }
+    /*Projects IMG and description*/
+    #projectsHr {
+        left: 42vw;
+    }
+    .imgP {
+        height: 40vh;
+        float: none;
+    }
+    #projectsContentOne {
+        margin-top: 1vh;
+    }
+    p {
+        font-size: 20px;
+    }
+    #projects_imgTwo {
+        margin-top: 20vh;
+    }
+    #projectsContentTwo {
+        margin-top: 1vh;
+        width: 70vw;
+    }
+    #projects_imgThree {
+        margin-top: 25vh;
+        margin-left: 17vw;
+        width: 70vw;
+    }
+    /*Form RWD 768 px*/
+    #contact_main {
+        margin-top: 300vh;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .contact__form-container {
+        height: 90vh;
+    }
+    .contact__form {
+        width: 60vw;
+        height: 87vh;
+    }
+    .contact__form-label {
+        font-size: 1.6rem;
+    }
+    .contact__form-input {
+        font-size: 20px;
+    }
+    /*Footer 768px*/
+    #footerMain {
+        margin-top: 740vh;
+    }
+    #socialF {
+        top: 843vh;
+    }
+    .logoSocial {
+        display: none;
+    }
+}
+/*Media Query for 1024*/
+
+@media only screen and (min-width: 1024px) {
+    .logoSocial {
+        display: block;
+        margin-bottom: 5vh;
+    }
+    #hThree {
+        width: 60vw;
+    }
+    #b1, #Sub, .bp1, #b2 {
+        width: 20vw;
+    }
+    .mainNav {
+        margin-right: 20px;
+    }
+    .mainNav:hover {
+        width: 7vw;
+    }
+    .big {
+        margin-right: 30px;
+    }
+    #aboutHr {
+        left: 42vw;
+    }
+    p {
+        width: 60vw;
+    }
+    .skills__skill {
+        height: 6.3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #projectsHr {
+        left: 44vw;
+    }
+    #no {
+        width: 40vw;
+        margin-top: 5vh;
+    }
+    #nameF {
+        margin-top: 0;
+        height: 15vh;
+        width: 40vw;
+    }
+    #socialF {
+        top: 867vh;
+        height: 15vh;
+        width: 20vw;
+        left: 70vw;
+    }
+    h3 {
+        float: left;
+    }
+    .contact__form-container {
+        width: 50vw;
+    }
+    #footer_main {
+        height: 27vh;
+    }
+    #footerMain {
+        margin-top: 750vh;
+    }
+    .contact__form-field {
+        width: 30vw;
+    }
+    .contact__form-input {
+        width: 30vw;
+        height: 7vh;
+    }
+    .imgP {
+        height: 50vh;
+    }
+    .Pcontact {
+        margin-left: 13vw;
+    }
+
+}
+/*Responsive for 1444px*/
+
+@media only screen and (min-width: 1440px) {
+    #menu {
+        left: 55vw;
+    }
+    #aboutHr {
+        left: 43vw;
+    }
+    #projectsHr {
+        left: 45.5vw;
+    }
+    #projectsContentOne {
+        margin-top: 30vh;
+    }
+    #projectsContentTwo {
+        margin-top: 30vh;
+    }
+    #projectsContentThree {
+        margin-top: 30vh;
+    }
+    p {
+        width: 60vw;
+    }
+    #contact_main {
+        margin-top: 370vh;
+    }
+    /*Footer*/
+    #footerMain {
+        margin-top: 810vh;
+    }
+    #socialF {
+        top: 923vh;
+    }
+    .imgP {
+        width: 50vw;
+        margin-right: 20vw;
+    }
+
+}
+/*Responsive for 192px*/
+@media only screen and (min-width: 1920px) {
+    #aboutHr {
+        left: 44vw;
+    }
+    #projectsHr {
+        left: 46.5vw;
+    }
+    .imgP {
+        width: 40vw;
+        height: 40vh;
+    }
+    #git_f, #yt_f {
+        width: 7vw;
+    }
+    #hThree {
+        margin-left: 15vw;
+        width: 50vw;
+    }
+    .Pcontact {
+        margin-left: 20vw;
+        width: 50vw;
+    }
+    #info {
+        margin-left: 15vw;
+    }
+    #skils {
+        margin-left: 10vw;
+    }
+    .skills__skill {
+        width: 25vw;
+    }
+    #projectsContentOne {
+        margin-top: 10vh;
+    }
+    #projectsContentTwo {
+        margin-top: 10vh;
+    }
+    #projectsContentThree {
+        margin-top: 10vh;
+    }
+    #contact_main {
+        margin-top: 320vh;
+    }
+    #footerMain {
+        margin-top: 760vh;
+    }
+    #socialF  {
+        top: 875vh;
+    }
+    .contact__form-container {
+        width: 35vw;
+    }
+    .imgP {
+        width: 30vw;
+    }
+}

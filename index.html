@@ -3,10 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Oliwier Markiewicz" />
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="portfolio, web developer, Ol1mowski, Oliwier Markiewicz, programer, JavaScript Developer">
+    <meta name="description" content="Website portfolio web developer with Three projects and formulage to contact with me" />
+    <meta name="application-name" content="Portfolio" />
+    <meta name="generator" content="VisualStudioCode" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Ol1mowski</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
@@ -20,18 +26,23 @@
     </svg>
             <span id="name">Oliwier Markiewicz</span>
         </div>
+        <div id="hamburger">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
         <div id="menu">
             <a href="#homeA">
-                <div id="home">HOME</div>
+                <div class="mainNav" id="home">HOME</div>
             </a>
             <a href="#aboutBlock">
-                <div id="about">ABOUT</div>
+                <div class="mainNav" id="about">ABOUT</div>
             </a>
             <a href="#projectsMain">
-                <div id="projects">PROJECTS</div>
+                <div class="big" id="projects">PROJECTS</div>
             </a>
             <a href="#contact_main">
-                <div id="contact">CONTACT</div>
+                <div class="big" id="contact">CONTACT</div>
             </a>
         </div>
     </header>
@@ -51,13 +62,13 @@
         <section id="contentMain">
             <div id="content">
                 <div id="hOne">
-                    <h1 style="font-size: 40px;">HEY, I'M OLIWIER MARKIEWICZ</h1>
+                    <h1 id="oneH1" style="font-size: 40px;">HEY, I'M OLIWIER MARKIEWICZ</h1>
                 </div>
                 <div id="hThree">
                     <h3>A Frondend focused Web Developer building the frondend of Websites and Web Applications that leads to the success of the overall product</h3>
                 </div>
                 <div id="change">
-                    <a href="#projectsMain"><button>PROJECTS</button></a>
+                    <a href="#projectsMain"><button id="b1">PROJECTS</button></a>
                 </div>
             </div>
         </section>
@@ -70,7 +81,7 @@
                 <hr id="aboutHr">
                 <br />
                 <br />
-                <p>Here you will find more information about me, what I do, and my current skills mostly in terms <br/> of programming and technology</p>
+                <p class="Pcontact">Here you will find more information about me, what I do, and my current skills mostly in terms <br/> of programming and technology</p>
             </div>
             <div id="information">
                 <div id="info">
@@ -80,7 +91,7 @@
                         content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my
                         <a href="https://www.youtube.com/channel/UCTNFKRALTZoSQS6mDOuDs2Q" target="_blank" rel="noopener noreferrer"><span id="ytSpan">YouTube chanel</span></a> where I post useful content related to <b>Web Development </b>and Programming
                         <br /> <br />I'm open to <b>Job</b> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <b>contact</b> me. <br /> <br />
-                        <a href="#contact_main"><button>CONTACT</button></a></p>
+                        <a href="#contact_main"><button id="b2">CONTACT</button></a></p>
                 </div>
                 <div id="skils">
                     <h1 style="font-size: 30px;">My skills</h1>
@@ -107,60 +118,65 @@
 
         <section id="projectsMain">
             <div id="infoProjects">
-                <h1 style="font-size: 30px;">Get to know me!</h1>
+                <h1 style="font-size: 40px;">Projects</h1>
                 <br />
                 <hr id="projectsHr">
                 <br />
                 <br />
-                <p>Here you will find some of the personal and clients projects that I created with each project <br> containing its own case study</p>
+                <p class="Pcontact">Here you will find some of the personal and clients projects that I created with each project <br> containing its own case study</p>
             </div>
             <div id="projects_container">
                 <div id="projects_imgOne">
-                    <img style="border-radius: 15px; float: right;" width="400px" height="400px" src="./img/Sklep.png" alt="page computer store">
+                    <img class="imgP" style="border-radius: 15px; float: right;" width="400px" height="400px" src="./img/Sklep.png" alt="page computer store">
                 </div>
                 <div id="projectsContentOne">
                     <h1>Webpage Computer store</h1>
-                    <p style="margin-top: 5vh;">Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally</p>
+                    <p style="margin-top: 5vh;">
+                        computer store website design is an interactive platform that allows you to get acquainted with the computer store's offer. The page consists of several main elements, including navigation menu, product offer,
+                        and contact module.</p>
                     <br>
                     <br>
-                    <a href="./projects/Project1.html" target="_blank" rel="noopener noreferrer"><button>Case Study</button></a>
+                    <a href="./projects/Project1.html" target="_blank" rel="noopener noreferrer"><button class="bp1">Case Study</button></a>
                 </div>
                 <div id="projects_imgTwo">
-                    <img style="border-radius: 15px; float: right;" width="400px" height="400px" src="./img/LogoKrzyza.png" alt="Web site computer store">
+                    <img class="imgP" style="border-radius: 15px; float: right;" width="400px" height="400px" src="./img/LogoKrzyza.png" alt="Web site computer store">
                 </div>
                 <div id="projectsContentTwo">
                     <h1>Tic-tac-toe game</h1>
-                    <p style="margin-top: 5vh;">Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally</p>
+                    <p style="margin-top: 5vh;">
+                        The tic-tac-toe game was made by me during my apprenticeship in spain. The game allows 2 players to play</p>
                     <br>
                     <br>
-                    <a href="./projects/Project2.html" target="_blank" rel="noopener noreferrer"><button>Case Study</button></a>
+                    <a href="./projects/Project2.html" target="_blank" rel="noopener noreferrer"><button class="bp1">Case Study</button></a>
                 </div>
                 <div id="projects_imgThree">
-                    <img style="border-radius: 15px; float: right;" width="400px" height="400px" src="./img/Portfolio.png" alt="Portfolio">
+                    <img class="imgP" style="border-radius: 15px; float: right;" width="400px" height="400px" src="./img/Portfolio.png" alt="Portfolio">
                 </div>
                 <div id="projectsContentThree">
                     <h1>My Portfolio</h1>
-                    <p style="margin-top: 5vh;">Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally</p>
+                    <p style="margin-top: 5vh;">
+                        My project portfolio was fully designed and implemented by me. It contains some of my projects as well as a contact form and links to e.g. github and YouTube channel</p>
                     <br>
                     <br>
-                    <a href="./projects/Project3.html" target="_blank" rel="noopener noreferrer"><button>Case Study</button></a>
+                    <a href="./projects/Project3.html" target="_blank" rel="noopener noreferrer"><button class="bp1">Case Study</button></a>
                 </div>
             </div>
         </section>
         <section id="contact_main">
             <div id="infoProjects">
-                <h1 style="font-size: 30px;">Contact</h1>
+                <h1 style="font-size: 35px;">Contact</h1>
                 <br />
                 <hr id="projectsHr">
                 <br />
                 <br />
-                <p>Feel free to Contact me by submitting the form below and <br> I will get back to you as soon as possible</p>
+                <p class="Pcontact">Feel free to Contact me by submitting the form below and <br> I will get back to you as soon as possible</p>
             </div>
             <div class="contact__form-container">
-                <form action='#' class='contact__form' method='post'>
+                <form autocomplete="off" class='contact__form' action="https://usebasin.com/f/53e4037cb8e2" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
                     <div class="contact__form-field">
                         <label class="contact__form-label" for="name">Name</label>
-                        <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name" id="name" />
+                        <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name" id="nameForm" />
                     </div>
                     <div class="contact__form-field">
                         <label class="contact__form-label" for="email">Email</label>
@@ -170,7 +186,7 @@
                         <label class="contact__form-label" for="message">Message</label>
                         <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message" name="message" id="message"></textarea>
                     </div>
-                    <button>Submit</button>
+                    <button id="Sub">Submit</button>
                 </form>
             </div>
         </section>
