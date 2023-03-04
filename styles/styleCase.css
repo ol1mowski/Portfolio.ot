@@ -895,6 +895,7 @@ footer {
         width: 50vw;
         height: 50vh;
     }
+    
     #description > p {
         font-size: 30px;
         line-height: 6vh;
@@ -911,5 +912,42 @@ footer {
     }
     #no {
         font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    #hThree {
+        width: 50vw;
+    }
+    #button1 {
+        width: 17vw;
+        height: 6vh;
+    }
+    #imgD {
+        width: 40vw;
+    }
+    #description {
+        width: 70vw;
+    }
+    #description > p {
+        font-size: 20px;
+        line-height: 5vh;
+    }
+    #skills{
+        width: 70vw;
+    }
+    .skill {
+        width: 13vw;
+        font-size: 22px;
+        word-break: break-all;
+    }
+    #git_f, #yt_f {
+        width: 5vw;
+    }
+    #git_f:hover {
+        width: 5.3vw;
+    }
+    #yt_f:hover {
+        width: 5.3vw;
     }
 }
